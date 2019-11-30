@@ -1,5 +1,6 @@
 #!/bin/bash
 rm -rf PyBuilderRestAPI
+kill -9 $(lsof -t -i:5000)
 echo "\n ############# Start Git Cloning Operation ############# \n"
 git clone https://github.com/Udayaprasad/PyBuilderRestAPI.git
 echo "\n ############# Change Directory to PyBuilderRestAPI ############# \n"
