@@ -1,4 +1,5 @@
 #!/bin/bash
+rm -rf PyBuilderRestAPI
 echo "\n ############# Start Git Cloning Operation ############# \n"
 git clone https://github.com/Udayaprasad/PyBuilderRestAPI.git
 echo "\n ############# Change Directory to PyBuilderRestAPI ############# \n"
