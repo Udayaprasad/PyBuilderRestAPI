@@ -1,17 +1,18 @@
 #!/bin/bash
-echo "############# Start Git Cloning Operation ############# \n"
+echo "\n ############# Start Git Cloning Operation ############# \n"
 git clone https://github.com/Udayaprasad/PyBuilderRestAPI.git
-echo "############# Change Directory to PyBuilderRestAPI ############# \n"
+echo "\n ############# Change Directory to PyBuilderRestAPI ############# \n"
 cd PyBuilderRestAPI
-"############# Create Virtual Environment mypyenv ############# \n"
+echo "\n ############# Create Virtual Environment mypyenv ############# \n"
 python -m venv mypyenv
-"############# Activate mypyenv Environment ############# \n"
+echo "\n ############# Activate mypyenv Environment ############# \n"
 source mypyenv/bin/activate
-"############# Install pybuilder package ############# \n"
+echo "\n ############# Install pybuilder package ############# \n"
 pip install pybuilder
-"############# Install and Build Project specific Libraries ############# \n"
+echo "\n ############# Install and Build Project specific Libraries ############# \n"
 pyb install_dependencies
-"############# Start the WebService ############# \n"
+echo "\n ############# Start the WebService ############# \n"
 python src/main/python/WebServiceExercise.py &
-"############# Perform Project Build and run the unit testcases ############# \n"
+echo "\n ############# Perform Project Build and run the unit testcases ############# \n"
 pyb -v
+echo "\n ############# Project Completed ############# \n"
